@@ -181,6 +181,48 @@ header {
   cursor: pointer;
 }
 
+/* animation assginments */
+
+.btn:hover {
+  animation: btnAction 0.5s;
+}
+
+@keyframes btnAction {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.plusaction {
+  margin-top: 150px;
+  font-size: 50px;
+}
+
+.plusaction i:hover {
+  animation: plusAction 1s;
+}
+
+@keyframes plusAction {
+  30% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(45deg);
+  }
+}
+
 /* Section 1 */
 .section-1 {
   width: 100%;
