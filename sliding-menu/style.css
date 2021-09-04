@@ -1,0 +1,130 @@
+/* RESET */
+html {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd,
+p,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-size: 14px;
+  font-family: Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo', sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+em {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  vertical-align: top;
+}
+
+fieldset {
+  border: 0;
+}
+
+/* CONTENT */
+body {
+  width: 100%;
+  height: 300vh;
+}
+
+.menu {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  transform: translateX(-200px);
+
+  background: #000;
+  color: #fff;
+
+  text-align: center;
+  padding-top: 100px;
+  z-index: 10;
+}
+
+.menu h1 {
+  font-size: 25px;
+  margin-bottom: 50px;
+  transform: translateX(100px);
+}
+
+.menu a {
+  margin: 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.671);
+}
+
+.menu:hover {
+  animation: menuAction 0.5s forwards ease-in-out;
+}
+
+.menu:hover h1 {
+  animation: menuBtn 0.5s forwards ease-in-out;
+}
+
+.menu:hover h2 {
+  animation: menuA 0.5s forwards 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+@keyframes menuAction {
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes menuBtn {
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes menuA {
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

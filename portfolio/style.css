@@ -163,15 +163,63 @@ a {
   margin-right: 40px;
 }
 
-.profile-left img {
-  border-radius: 50%;
-  margin-right: 50px;
-  width: 150px;
+/* profile animation */
+.profile-outer {
   height: 150px;
+  width: 150px;
+}
+
+.profile-flip {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.profile-flip:hover {
+  transform: rotateY(180deg);
+}
+
+.profile-back {
+  background: burlywood;
+  text-align: center;
+  box-sizing: border-box;
+
+  transform: rotateY(180deg);
+}
+
+.profile-front {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.profile-back {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-front {
+  backface-visibility: hidden;
+}
+
+.profile-back h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.profile-back h4 {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 .my-info {
   padding: 20px 0;
+  margin-left: 50px;
 }
 
 .my-info h1 {

@@ -211,7 +211,7 @@ header {
 }
 
 .plusaction i:hover {
-  animation: plusAction 1s;
+  animation: plusAction 1s forwards;
 }
 
 @keyframes plusAction {
